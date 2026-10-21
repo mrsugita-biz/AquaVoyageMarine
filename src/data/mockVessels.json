@@ -1,0 +1,130 @@
+[
+  {
+    "id": "vessel-001",
+    "slug": "45ft-luxury-twin-hull-catamaran",
+    "title": "45ft Luxury Twin-Hull Catamaran Day Charter",
+    "vessel_type": "Catamaran",
+    "departure_port": "Sanur Harbor",
+    "category_tag": "island-hopping",
+    "max_capacity": 12,
+    "length_ft": 45,
+    "base_price_usd": 850.00,
+    "duration_hours": 8,
+    "description": "Experience premium ocean sailing aboard our 45ft twin-hull luxury catamaran. Designed for private groups seeking spacious sunbeds, air-conditioned indoor saloon, Bluetooth sound systems, and crystal-clear reef snorkeling at Nusa Penida.",
+    "image_urls": [
+      "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "inclusions": [
+      "Hotel Pick-up & Drop-off (Air-conditioned vehicle)",
+      "Welcome Fresh Coconuts & Chilled Towels",
+      "Gourmet Buffet Lunch with Vegetarian/Vegan Options",
+      "Snorkeling Masks, Fins & Safety Vests",
+      "2x Stand-Up Paddleboards (SUP)",
+      "Marine Safety Crew & Insurance Coverage"
+    ],
+    "has_open_bar": true,
+    "has_catering": true,
+    "has_vegetarian_menu": true,
+    "has_snorkeling_gear": true,
+    "has_sup_paddleboards": true,
+    "has_aircon_cabins": true,
+    "has_toilet_shower": true,
+    "has_bluetooth_sound": true,
+    "itinerary_timeline": [
+      { "time": "08:30 AM", "activity": "Hotel Pickup & Sanur Harbor Check-in" },
+      { "time": "09:15 AM", "activity": "Set Sail across Badung Strait" },
+      { "time": "11:00 AM", "activity": "Snorkeling at Manta Point & Coral Reefs" },
+      { "time": "01:00 PM", "activity": "Gourmet Lunch Onboard at Secluded Bay" },
+      { "time": "03:30 PM", "activity": "Sailing back toward Sunset Coast" },
+      { "time": "05:00 PM", "activity": "Disembark at Sanur & Hotel Drop-off" }
+    ],
+    "addons": [
+      { "id": "add-101", "addon_name": "Seafood & Vegetarian BBQ Grill Upgrade", "price_usd": 25.00, "pricing_type": "per_person" },
+      { "id": "add-102", "addon_name": "Private Luxury SUV Hotel Transfer", "price_usd": 40.00, "pricing_type": "flat_rate" },
+      { "id": "add-103", "addon_name": "Pro Drone & Go Pro Footage Package", "price_usd": 75.00, "pricing_type": "flat_rate" }
+    ],
+    "affiliate_partner": "Viator",
+    "affiliate_url": "https://www.viator.com/?mcid=demo_approval"
+  },
+  {
+    "id": "vessel-002",
+    "slug": "38ft-high-speed-ocean-craft",
+    "title": "38ft High-Speed Ocean Craft & Snorkel Cruise",
+    "vessel_type": "Luxury Speedboat",
+    "departure_port": "Nusa Dua",
+    "category_tag": "diving-snorkel",
+    "max_capacity": 8,
+    "length_ft": 38,
+    "base_price_usd": 550.00,
+    "duration_hours": 4,
+    "description": "Fast-track your marine excursion with a 38ft twin-engine luxury speedboat. Ideal for private small-group island hopping, deep sea reef exploration, and high-speed coastal cruising.",
+    "image_urls": [
+      "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "inclusions": [
+      "Full Snorkeling Equipment & Fins",
+      "Chilled Mineral Water & Tropical Fruit Platter",
+      "Licensed Marine Captain & Reef Guide"
+    ],
+    "has_open_bar": false,
+    "has_catering": false,
+    "has_vegetarian_menu": true,
+    "has_snorkeling_gear": true,
+    "has_sup_paddleboards": false,
+    "has_aircon_cabins": false,
+    "has_toilet_shower": true,
+    "has_bluetooth_sound": true,
+    "itinerary_timeline": [
+      { "time": "08:00 AM", "activity": "Nusa Dua Marina Departure" },
+      { "time": "09:00 AM", "activity": "Coral Garden Reef Exploration" },
+      { "time": "11:30 AM", "activity": "Speedboat Coastal Cruise" },
+      { "time": "12:00 PM", "activity": "Return to Marina" }
+    ],
+    "addons": [
+      { "id": "add-201", "addon_name": "Packed Bento Box Lunch (Veg/Non-Veg)", "price_usd": 15.00, "pricing_type": "per_person" }
+    ],
+    "affiliate_partner": "GetYourGuide",
+    "affiliate_url": "https://www.getyourguide.com/?partner_id=demo_approval"
+  },
+  {
+    "id": "vessel-003",
+    "slug": "65ft-traditional-wooden-phinisi",
+    "title": "65ft Traditional Wooden Phinisi Sunset Cruise",
+    "vessel_type": "Phinisi",
+    "departure_port": "Labuan Bajo",
+    "category_tag": "sunset-cruises",
+    "max_capacity": 18,
+    "length_ft": 65,
+    "base_price_usd": 1200.00,
+    "duration_hours": 8,
+    "description": "Experience hand-crafted Indonesian marine heritage aboard a 65ft wooden Phinisi schooner. Features expansive teak decks, shade saloons, and gourmet sunset dining options.",
+    "image_urls": [
+      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "inclusions": [
+      "Traditional Indonesian Buffet (Veg/Vegan Options)",
+      "Sunset Mocktails & Canapés",
+      "Snorkeling & Kayaking Equipment"
+    ],
+    "has_open_bar": true,
+    "has_catering": true,
+    "has_vegetarian_menu": true,
+    "has_snorkeling_gear": true,
+    "has_sup_paddleboards": true,
+    "has_aircon_cabins": true,
+    "has_toilet_shower": true,
+    "has_bluetooth_sound": true,
+    "itinerary_timeline": [
+      { "time": "11:00 AM", "activity": "Labuan Bajo Harbor Boarding" },
+      { "time": "01:00 PM", "activity": "Island Trekking & Snorkeling" },
+      { "time": "05:00 PM", "activity": "Sunset Canapés on Open Teak Deck" },
+      { "time": "07:00 PM", "activity": "Return to Harbor" }
+    ],
+    "addons": [
+      { "id": "add-301", "addon_name": "Free-Flow Premium Beverage Package", "price_usd": 35.00, "pricing_type": "per_person" }
+    ],
+    "affiliate_partner": "Viator",
+    "affiliate_url": "https://www.viator.com/?mcid=demo_approval"
+  }
+]

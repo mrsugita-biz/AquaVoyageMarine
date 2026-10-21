@@ -1,0 +1,80 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { getAllVessels } from '../lib/dataService';
+
+const vessels = await getAllVessels();
+---
+
+<MainLayout title="AquaVoyage | Luxury Private Boat Charters & Catamarans">
+  <!-- Hero Section -->
+  <section class="relative bg-[#0B192C] text-white py-24 px-6 overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#1E3E62,transparent_50%)] opacity-70"></div>
+    <div class="max-w-5xl mx-auto relative z-10 text-center space-y-6">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-widest">
+        Verified Operators • Transparent Pricing
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+        Private Boat Charters & Catamarans
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
+        Compare direct group rates, verify onboard catering & menu options, and lock in your dates with verified marine charter operators.
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Fleet Grid -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-widest text-cyan-700">Hand-Selected Vessels</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Featured Private Charters</h2>
+      </div>
+      <a href="/charters" class="text-xs font-bold text-cyan-700 hover:text-cyan-900 flex items-center gap-1 group">
+        View Complete Fleet <span class="group-hover:translate-x-1 transition-transform">→</span>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {vessels.map((vessel) => (
+        <article class="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col group">
+          <div class="aspect-[4/3] relative overflow-hidden bg-slate-100">
+            <img 
+              src={vessel.image_urls[0]} 
+              alt={vessel.title} 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <span class="absolute top-4 left-4 bg-slate-900/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              {vessel.vessel_type}
+            </span>
+          </div>
+
+          <div class="p-6 flex flex-col flex-grow justify-between space-y-4">
+            <div>
+              <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+                <span>📍 {vessel.departure_port}</span>
+                <span>Max {vessel.max_capacity} Guests</span>
+              </div>
+              <h3 class="font-bold text-slate-900 text-lg group-hover:text-cyan-700 transition-colors leading-snug">
+                {vessel.title}
+              </h3>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div>
+                <span class="text-[11px] uppercase text-slate-400 font-semibold block">From</span>
+                <span class="text-xl font-extrabold text-slate-900">${vessel.base_price_usd}</span>
+                <span class="text-xs text-slate-500"> / charter</span>
+              </div>
+              <a 
+                href={`/charters/${vessel.slug}`}
+                class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-cyan-700 text-white text-xs font-bold transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</MainLayout>

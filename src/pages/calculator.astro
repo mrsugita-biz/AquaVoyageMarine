@@ -1,0 +1,32 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import GroupCalculator from '../components/GroupCalculator.jsx';
+import { getAllVessels } from '../lib/dataService';
+
+const vessels = await getAllVessels();
+const defaultVessel = vessels[0];
+---
+
+<MainLayout title="Group Charter Cost & Menu Calculator | MarineCharter">
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <div class="text-center mb-10 space-y-3">
+      <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+        Planning Tool
+      </span>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900">Group Charter Cost Estimator</h1>
+      <p class="text-xs md:text-sm text-slate-500 max-w-xl mx-auto">
+        Calculate total costs, per-person rates, and add-on catering options for private boat charters.
+      </p>
+    </div>
+
+    {defaultVessel && (
+      <GroupCalculator 
+        client:load
+        basePriceUsd={defaultVessel.base_price_usd}
+        maxCapacity={defaultVessel.max_capacity}
+        affiliateUrl={defaultVessel.affiliate_url}
+        addons={defaultVessel.addons || []}
+      />
+    )}
+  </main>
+</MainLayout>
